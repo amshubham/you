@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Rose Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#ff4e8a,#ff9a9e);
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* hide radio */
+input{ display:none; }
+
+/* book */
+.book{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+
+/* pages */
+.page{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  transform:translateX(100%);
+  transition:0.8s;
+  padding:20px;
+  text-align:center;
+}
+
+/* show selected */
+#p1:checked ~ .pages .page:nth-child(1),
+#p2:checked ~ .pages .page:nth-child(2),
+#p3:checked ~ .pages .page:nth-child(3),
+#p4:checked ~ .pages .page:nth-child(4),
+#p5:checked ~ .pages .page:nth-child(5),
+#p6:checked ~ .pages .page:nth-child(6),
+#p7:checked ~ .pages .page:nth-child(7),
+#p8:checked ~ .pages .page:nth-child(8),
+#p9:checked ~ .pages .page:nth-child(9),
+#p10:checked ~ .pages .page:nth-child(10),
+#p11:checked ~ .pages .page:nth-child(11),
+#p12:checked ~ .pages .page:nth-child(12),
+#p13:checked ~ .pages .page:nth-child(13){
+  transform:translateX(0);
+}
+
+/* text */
+h1{
+  color:white;
+  font-size:36px;
+  text-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+/* images */
+img{
+  max-width:90%;
+  max-height:75vh;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* button */
+.next{
+  margin-top:25px;
+  padding:12px 25px;
+  background:white;
+  color:#ff4e8a;
+  border-radius:30px;
+  font-weight:600;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+  <!-- radios -->
+  <input type="radio" name="page" id="p1" checked>
+  <input type="radio" name="page" id="p2">
+  <input type="radio" name="page" id="p3">
+  <input type="radio" name="page" id="p4">
+  <input type="radio" name="page" id="p5">
+  <input type="radio" name="page" id="p6">
+  <input type="radio" name="page" id="p7">
+  <input type="radio" name="page" id="p8">
+  <input type="radio" name="page" id="p9">
+  <input type="radio" name="page" id="p10">
+  <input type="radio" name="page" id="p11">
+  <input type="radio" name="page" id="p12">
+  <input type="radio" name="page" id="p13">
+
+  <div class="pages">
+
+    <!-- PAGE 1 -->
+    <div class="page">
+      <h1>🌹 Happy Rose Day My Milshkha 💓💞</h1>
+      <label for="p2" class="next">Open Memories ➜</label>
+    </div>
+
+    <!-- photos -->
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56271.webp"><label for="p3" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56079.jpg"><label for="p4" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56078.jpg"><label for="p5" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56267.jpg"><label for="p6" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56266.jpg"><label for="p7" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56265.webp"><label for="p8" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56264.webp"><label for="p9" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56262.jpg"><label for="p10" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56263.jpg"><label for="p11" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56259.png"><label for="p12" class="next">Next ➜</label></div>
+    <div class="page"><img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56258.jpg"><label for="p13" class="next">Next ➜</label></div>
+
+    <!-- last -->
+    <div class="page">
+      <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56256.jpg">
+      <label for="p1" class="next">Start Again ❤️</label>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
